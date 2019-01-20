@@ -9,7 +9,7 @@ List<int> xor(ByteData a, ByteData b) {
   }
 
   bool aIsBigger = a.lengthInBytes > b.lengthInBytes;
-  
+
   int length = aIsBigger ? a.lengthInBytes : b.lengthInBytes;
 
   List<int> buffer = List.filled(length, 0);
@@ -20,12 +20,12 @@ List<int> xor(ByteData a, ByteData b) {
     var aa, bb;
     try {
       aa = a.getUint8(i);
-    } catch(e) {
+    } catch (e) {
       aa = 0;
     }
     try {
       bb = b.getUint8(i);
-    } catch(e) {
+    } catch (e) {
       bb = 0;
     }
 
