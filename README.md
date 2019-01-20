@@ -4,5 +4,7 @@ This is a work in progress for the moment, I plan to expand the capabilities of 
  - Multiple IntList types (currently only Uint8List is supported)
  - In-place equivalent which would overwrite buffer a with a[i] ^ b[i]
 
-## (./CONTRIBUTING.md)[CONTRIBUTING]
-## (./CHANGELOG.md)[CHANGELOG]
+## CONTRIBUTING
+see (./CONTRIBUTING.md)[CONTRIBUTING.md]
+## CHANGELOG
+see (./CHANGELOG.md)[CHANGELOG.md]
