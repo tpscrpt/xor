@@ -5,6 +5,6 @@ This is a work in progress for the moment, I plan to expand the capabilities of 
  - In-place equivalent which would overwrite buffer a with a[i] ^ b[i]
 
 ## CONTRIBUTING
-see (./CONTRIBUTING.md)[CONTRIBUTING.md]
+see [./CONTRIBUTING.md](CONTRIBUTING.md)
 ## CHANGELOG
-see (./CHANGELOG.md)[CHANGELOG.md]
+see [./CHANGELOG.md](CHANGELOG.md)
