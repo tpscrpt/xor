@@ -2,29 +2,26 @@ library xor;
 
 import 'dart:typed_data';
 
-List<int> xor(ByteData a, ByteData b) {
+Uint8List xor(Uint8List a, Uint8List b) {
   if (a.lengthInBytes == 0 || b.lengthInBytes == 0) {
     throw ArgumentError.value(
-        "lengthInBytes of ByteData arguments must be > 0");
+        "lengthInBytes of Uint8List arguments must be > 0");
   }
 
   bool aIsBigger = a.lengthInBytes > b.lengthInBytes;
-
   int length = aIsBigger ? a.lengthInBytes : b.lengthInBytes;
 
-  List<int> buffer = List.filled(length, 0);
-
-  print(a.elementSizeInBytes);
+  Uint8List buffer = Uint8List(length);
 
   for (int i = 0; i < length; i++) {
     var aa, bb;
     try {
-      aa = a.getUint8(i);
+      aa = a.elementAt(i);
     } catch (e) {
       aa = 0;
     }
     try {
-      bb = b.getUint8(i);
+      bb = b.elementAt(i);
     } catch (e) {
       bb = 0;
     }
